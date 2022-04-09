@@ -1,0 +1,295 @@
+/*Bleprintjs CSS files*/
+
+@import "../node_modules/normalize.css/normalize.css";
+@import "../node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../node_modules/@blueprintjs/timezone/lib/css/blueprint-timezone.css";
+
+body {
+  padding-top: 50px;  /* To account for Navbar at top of viewport */
+}
+
+card {
+  margin: .5em;
+}
+
+div.spacer {
+  height: 1em;
+}
+
+.helptext {
+  font-size: .75em;
+  margin-left: .25em;
+}
+
+textarea.sysadmin {
+  display: block;
+  margin-top: 1em;
+  font-size: x-small;
+  font-family: Monoid, monospace;
+}
+
+.formfield {
+  margin: .5em;
+}
+
+.captchaDiv {
+  margin: .5em 0 .5em 0;
+}
+
+.newlinkDialog {
+  padding: 1em;
+}
+
+.navbar {
+  background-color: mediumpurple;
+  color: white;
+  font-family: Bahnschrift;
+  font-size: 14pt;
+}
+
+.navbar.sysadmin {
+  background-color: mediumblue;
+  color: white;
+}
+
+.bp3-button.navbar {
+  color: white;
+}
+
+.bp3-button.navbar.sysadmin:hover {
+  color: red;
+}
+
+.bp3-button.navbar span.bp3-icon {
+  color: white;
+}
+
+.bp3-navbar-divider {
+  border-left-color: white;
+}
+
+form input.bp3-input {
+  margin: .25em 0 .25em 0;
+}
+
+input.bp3-input + span.bp3-input-action {
+  top: 4px;
+}
+
+.calendardance-button {
+  font-size: x-large;
+  margin-top: .25em;
+}
+
+.calendardance-button.friendly {
+  border-radius: 1em;
+}
+
+.calendardance-button-sm {
+  font-size: small;
+  margin-top: .25em;
+}
+
+.calendardance-button-grid {
+  font-size: small;
+  min-height: unset;
+  vertical-align: baseline;
+  margin-left: .4em;
+}
+
+.calendardance-dialog {
+  padding: 1em;
+}
+
+.calendardance-formgroup {
+  border: mediumblue solid 1px;
+  margin-top: 1em;
+  padding: .25em;
+}
+
+.calendardance-formgroup label.bp3-label {
+  font-size: medium;
+  font-weight: bolder;
+  margin-top: -1em;
+  margin-left: 3px;
+  background-color: white;
+  width: fit-content;
+}
+
+.calendardance-table-th {
+  font-weight: bold !important;
+}
+
+.slotmap {
+  background-color: lightgray;
+  margin-top: 1px;
+}
+
+.cd-button-link {
+  margin-right: 1em;
+}
+
+.cd-button-link-tiny {
+  font-size: xx-small;
+}
+
+.cd-grid-line {
+  margin-bottom: .5em;
+}
+
+.cd-calendar-name {
+  float:left;
+  width: 200px;
+}
+
+span.tiny {
+  font-size: xx-small;
+}
+
+.cd-indicator-on {
+  background-color: mediumpurple !important;
+}
+
+.cd-indicator-off {
+  background-color: unset !important;
+}
+
+p.table-instructions {
+  font-size: large;
+}
+
+/* Dance List */
+.dance-container {
+  display: grid;
+  grid-gap: .25em;
+  grid-template-columns: 1fr 3fr 2fr;
+}
+
+.dc-header {
+  background-color: lightgray !important;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.dc-with {
+  grid-column: 1;
+  background-color: thistle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dc-whatwhen {
+  grid-column: 2;
+  text-align: center;
+}
+
+.dc-action {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: thistle;
+}
+
+.dc-dance{
+  grid-column: 2;
+  grid-row: auto;
+  display: grid;
+  grid-row-gap: .1em;
+  grid-column-gap: 0;
+  grid-template-columns: 1.5fr 2fr 2fr;
+  background-color: #ffffff;
+}
+
+.shown {
+  display: grid;
+}
+
+.notshown {
+  display: none !important;
+}
+
+.dc-dance-sub{
+  grid-column: 1 / span 3;
+  grid-row: auto;
+  display: grid;
+  grid-row-gap: .1em;
+  grid-column-gap: 0;
+  grid-template-columns: 1.5fr 2fr 2fr;
+  background-color: #ffffff;
+}
+
+.even {
+  background-color: plum;
+}
+
+.odd {
+  background-color: lightgray;
+}
+
+.dc-who {
+  grid-column: 1;
+  grid-row: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dc-for {
+  grid-column: 2;
+  grid-row: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dc-when {
+  grid-column: 3;
+  grid-row: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dc-forwhen {
+  grid-column: 2 / span 2;
+  grid-row: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dc-more-row {
+  grid-column: 1 / span 3;
+  grid-row: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  background-color: darkkhaki;
+}
+
+.dance-header-category {
+  background-color: darkkhaki;
+}
+
+#more-icon {
+  background-color: thistle;
+  padding-right: 5px;
+}
+
+.bp3-overflow-list-spacer {
+  display: none;
+}
+
+.select-checkbox option::before {
+  content: "\2610";
+  width: 1.3em;
+  text-align: center;
+  display: inline-block;
+}
+.select-checkbox option:checked::before {
+  content: "\2611";
+}

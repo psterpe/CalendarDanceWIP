@@ -1,0 +1,44 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/storage": "^4.3.2",
+    "@types/express": "^4.17.2",
+    "@types/luxon": "^1.25.0",
+    "@types/node": "^13.7.7",
+    "@types/yargs": "^15.0.11",
+    "bitset": "^5.1.1",
+    "body-parser": "^1.19.0",
+    "es6-dynamic-template": "^2.0.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.9.2",
+    "luxon": "^1.25.0",
+    "mailgun-js": "^0.22.0",
+    "moment-timezone": "^0.5.28",
+    "node-fetch": "^2.6.0",
+    "node-ical": "^0.10.0",
+    "rrule": "^2.6.4",
+    "xmldoc": "^1.1.2",
+    "yargs": "^16.1.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/express": "^4.17.2",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "prebuild": "rm -rf providers && mkdir providers && cp ../default/providers/*.ts providers && chmod 400 providers/*.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud config set project calendardance && gcloud app deploy worker.yaml",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

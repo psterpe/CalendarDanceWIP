@@ -1,0 +1,27 @@
+{
+  "name": "scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/firestore": "^4.8.1",
+    "@google-cloud/storage": "^4.3.2",
+    "@types/luxon": "^1.25.0",
+    "@types/node": "^13.7.7",
+    "bitset": "^5.1.1",
+    "firebase-admin": "^8.9.2",
+    "luxon": "^1.25.0",
+    "moment": "^2.25.3",
+    "moment-timezone": "^0.5.28",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud config set project calendardance && gcloud app deploy scanner.yaml",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

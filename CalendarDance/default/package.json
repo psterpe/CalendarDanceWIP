@@ -1,0 +1,53 @@
+{
+  "name": "calendardancebackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "buildall": "npm run build && cd ../worker && npm run build && cd ../scanner && npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud config set project calendardance && gcloud app deploy",
+    "start": "node index.js"
+  },
+  "author": "Peter J. Sterpe",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/debug-agent": "^4.2.1",
+    "@google-cloud/storage": "^4.2.0",
+    "@google-cloud/tasks": "^1.8.0",
+    "@types/express-session": "^1.15.16",
+    "@types/luxon": "^1.25.0",
+    "@types/node": "^13.1.2",
+    "@types/redis": "^2.8.28",
+    "@types/yargs": "^15.0.11",
+    "bitset": "^5.1.0",
+    "cors": "^2.8.5",
+    "es6-dynamic-template": "^2.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "firebase-admin": "^8.9.0",
+    "firestore-store": "^2.0.1",
+    "luxon": "^1.25.0",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "node-fetch": "^2.6.1",
+    "node-ical": "^0.10.0",
+    "rrule": "^2.6.4",
+    "url": "^0.11.0",
+    "xmldoc": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/express": "^4.17.2",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  }
+}
